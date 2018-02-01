@@ -1296,6 +1296,7 @@
         },
 
         clickDate: function(e) {
+            this.element.trigger('click.daterangepicker', this);
 
             if (!$(e.target).hasClass('available')) return;
 
